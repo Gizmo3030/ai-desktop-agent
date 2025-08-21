@@ -4,3 +4,6 @@
 agent-frontend/node_modules
 agent-backend/__pycache__
 agent-backend/.pytest_cache
+agent-frontend/build*
+agent-frontend/out*
+agent-frontend/package-lock.json

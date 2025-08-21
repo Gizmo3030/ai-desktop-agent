@@ -4,14 +4,18 @@
   "description": "An AI agent for your desktop.",
   "main": "main.js",
   "scripts": {
-    "start:electron": "electron .", 
-    "start:react": "react-scripts start", 
-    "react-build": "react-scripts build",
-    "dev": "concurrently \"npm run start:react\" \"wait-on http://localhost:3000 && cross-env NODE_ENV=development npm run start:electron\""
+    "start:electron": "electron .",
+    "start:react": "react-scripts start",
+    "build": "react-scripts build",
+    "dev": "concurrently \"npm run start:react\" \"wait-on http://localhost:3000 && cross-env NODE_ENV=development npm run start:electron\"",
+    "start-forge": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "start": "electron-forge start"
   },
   "dependencies": {
     "axios": "^1.11.0",
-    "electron": "^31.7.7",
+    "electron-squirrel-startup": "^1.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1"
@@ -29,13 +33,20 @@
     ]
   },
   "keywords": [],
-  "author": "",
+  "author": "Cody Robillard",
   "license": "ISC",
   "devDependencies": {
     "@electron-forge/cli": "^7.8.3",
-    "electron-builder": "^26.0.12",
-    "concurrently": "^8.2.2",  
-    "wait-on": "^7.2.0",        
-    "cross-env": "^7.0.3"       
+    "@electron-forge/maker-deb": "^7.8.3",
+    "@electron-forge/maker-rpm": "^7.8.3",
+    "@electron-forge/maker-squirrel": "^7.8.3",
+    "@electron-forge/maker-zip": "^7.8.3",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.8.3",
+    "@electron-forge/plugin-fuses": "^7.8.3",
+    "@electron/fuses": "^1.8.0",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^31.7.7",
+    "wait-on": "^7.2.0"
   }
 }

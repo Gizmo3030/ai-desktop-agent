@@ -19,7 +19,8 @@ function createWindow() {
     });
 
     // In development, load from React's server. In production, load from build file.
-    mainWindow.loadURL('http://localhost:3000'); 
+    //mainWindow.loadURL('http://localhost:3000'); 
+    mainWindow.loadFile(path.join(__dirname, 'public', 'index.html'));
     
     mainWindow.on('closed', () => mainWindow = null);
     
