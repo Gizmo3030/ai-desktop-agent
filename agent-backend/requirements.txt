@@ -1,6 +1,8 @@
 crewai
 crewai-tools
 langchain_community
+langchain-openai
+langchain-ollama
 python-dotenv
 flask
 flask-cors

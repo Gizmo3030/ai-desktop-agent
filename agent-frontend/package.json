@@ -4,9 +4,10 @@
   "description": "An AI agent for your desktop.",
   "main": "main.js",
   "scripts": {
-    "start": "electron .",
-    "react-start": "react-scripts start",
-    "react-build": "react-scripts build"
+    "start:electron": "electron .", 
+    "start:react": "react-scripts start", 
+    "react-build": "react-scripts build",
+    "dev": "concurrently \"npm run start:react\" \"wait-on http://localhost:3000 && cross-env NODE_ENV=development npm run start:electron\""
   },
   "dependencies": {
     "axios": "^1.11.0",
@@ -32,6 +33,9 @@
   "license": "ISC",
   "devDependencies": {
     "@electron-forge/cli": "^7.8.3",
-    "electron-builder": "^26.0.12"
+    "electron-builder": "^26.0.12",
+    "concurrently": "^8.2.2",  
+    "wait-on": "^7.2.0",        
+    "cross-env": "^7.0.3"       
   }
 }
