@@ -1,7 +1,0 @@
-{
-    "python.testing.pytestArgs": [
-        "agent-backend"
-    ],
-    "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
-}
