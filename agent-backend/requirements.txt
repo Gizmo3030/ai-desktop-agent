@@ -1,0 +1,9 @@
+crewai
+crewai-tools
+langchain_community
+python-dotenv
+flask
+flask-cors
+litellm
+mss
+Pillow
