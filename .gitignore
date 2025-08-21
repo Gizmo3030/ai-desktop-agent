@@ -1,4 +1,4 @@
 .env
 .venv
-.node_modules
-agent-frontend/node_modules
+.node_modules*
+agent-frontend/node_modules*

@@ -1,0 +1,37 @@
+{
+  "name": "ai-desktop-agent",
+  "version": "1.0.0",
+  "description": "An AI agent for your desktop.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "electron": "^31.7.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.8.3",
+    "electron-builder": "^26.0.12"
+  }
+}
