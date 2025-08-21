@@ -1,4 +1,6 @@
 .env
 .venv
 .node_modules*
-agent-frontend/node_modules*
+agent-frontend/node_modules
+agent-backend/__pycache__
+agent-backend/.pytest_cache
